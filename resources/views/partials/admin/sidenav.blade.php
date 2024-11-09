@@ -20,12 +20,12 @@
                 <i class="fas fa-users-gear pr-4 me-2"></i><span>الموظفين</span></a>
         </li>
 
-        <li class="sidenav-item">
+        {{-- <li class="sidenav-item">
             <a class="sidenav-link" href="{{ route('admin.panel.contact-us') }}">
                 <i class="fas fa-comment-dots pr-4 me-2"></i>
                 <span>استفسار العملاء</span>
             </a>
-        </li>
+        </li> --}}
 
     </ul>
 </nav>
