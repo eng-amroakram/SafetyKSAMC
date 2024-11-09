@@ -83,8 +83,8 @@ class Viewer extends Component
 
         foreach ($images as $image) {
             $filePath = storage_path("app/public/{$image->path}");
-            dd($image, $filePath, $images, file_exists($filePath));
-            if (file_exists($filePath)) {
+
+            if (file_exists($filePath) && $image->path) {
             } else {
                 $this->alertMessage('لم يتم رفع الصور بطريقة صحيحة', 'error');
                 return false;
