@@ -85,7 +85,6 @@ class Viewer extends Component
 
         // Create a temporary file to store the zip
         $zipFilePath = storage_path('app/public/' . $zipFileName);
-        dd($zipFilePath);
 
         $zip = new ZipArchive;
 
