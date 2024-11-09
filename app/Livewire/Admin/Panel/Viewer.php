@@ -80,6 +80,16 @@ class Viewer extends Component
     {
         $images = $solution->images;
 
+        foreach ($images as $image) {
+            $filePath = storage_path("app/public/{$image->path}");
+            if (file_exists($filePath)) {
+            } else {
+                $this->alertMessage('لم يتم رفع الصور بطريقة صحيحة', 'error');
+                return false;
+            }
+        }
+
+
         // Name of the zip file
         $zipFileName = 'images.zip';
 
