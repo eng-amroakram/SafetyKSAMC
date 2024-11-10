@@ -12,12 +12,12 @@
 
         <li class="sidenav-item">
             <a class="sidenav-link" href="{{ route('admin.panel.index') }}">
-                <i class="fas fa-chart-area pr-4 me-2 fs-6 fw-bold"></i><span>الصفحة الرئيسية</span></a>
+                <i class="fas fa-chart-area pr-4 me-2 fs-5 fw-bold"></i><span>الصفحة الرئيسية</span></a>
         </li>
 
         <li class="sidenav-item">
             <a class="sidenav-link" href="{{ route('admin.panel.users') }}">
-                <i class="fas fa-users-gear pr-4 me-2 fs-6 fw-bold"></i><span>الموظفين</span></a>
+                <i class="fas fa-users-gear pr-4 me-2 fs-5 fw-bold"></i><span>الموظفين</span></a>
         </li>
 
         {{-- <li class="sidenav-item">
