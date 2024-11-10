@@ -198,9 +198,9 @@
 }
 
 .lightbox-gallery .lightbox-gallery-arrow-right button:before {
-    font-family: Font Awesome\6 Free;
-    font-weight: var(--mdb-lightbox-gallery-arrow-button-before-font-weight);
-    content: "ï¡";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Font Awesome 6 uses 900 for solid icons */
+    content: "\f061"; /* Right Arrow */
 }
 
 .lightbox-gallery .lightbox-gallery-arrow-right button.fontawesome-pro:before {
