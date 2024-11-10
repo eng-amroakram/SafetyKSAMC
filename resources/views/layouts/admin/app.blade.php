@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/card.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/switch.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/modals.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/lightbox.css') }}">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/lightbox.css') }}"> --}}
 
     <link rel="icon" type="image/png" href="{{ asset('assets/web/images/logo.jpeg') }}">
 

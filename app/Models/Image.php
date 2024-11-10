@@ -22,6 +22,11 @@ class Image extends Model
         'name'
     ];
 
+    public function getPhotoTableAttribute()
+    {
+        return $this->attributes['path'] ? asset('storage/' . $this->attributes['path']) : asset('assets/admin/images/no-image-available.jpg');
+    }
+
     public function user()
     {
         return $this->belongsTo(User::class, 'user_id', 'id');

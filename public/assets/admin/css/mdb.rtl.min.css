@@ -17658,36 +17658,35 @@ fieldset:disabled .btn-group-vertical {
     color: #fff;
 }
 .lightbox-gallery .lightbox-gallery-toolbar button:before {
-    font-family: Font Awesome\5 Free;
-    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Use 900 for solid style */
 }
+
 .lightbox-gallery .lightbox-gallery-toolbar button.fontawesome-pro:before {
-    font-family: Font Awesome\5 Pro;
+    font-family: "Font Awesome 5 Pro";
 }
-.lightbox-gallery
-    .lightbox-gallery-toolbar
-    button.lightbox-gallery-fullscreen-btn:before {
-    content: "ïپ¥";
+
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-fullscreen-btn:before {
+    content: "\f065"; /* Fullscreen Enter (Maximize) */
 }
-.lightbox-gallery
-    .lightbox-gallery-toolbar
-    button.lightbox-gallery-fullscreen-btn.active:before {
-    content: "ïپ¦";
+
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-fullscreen-btn.active:before {
+    content: "\f066"; /* Fullscreen Exit (Minimize) */
 }
-.lightbox-gallery
-    .lightbox-gallery-toolbar
-    button.lightbox-gallery-zoom-btn:before {
-    content: "ï€ژ";
+
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-zoom-btn:before {
+    content: "\f00e"; /* Zoom In */
 }
-.lightbox-gallery
-    .lightbox-gallery-toolbar
-    button.lightbox-gallery-zoom-btn.active:before {
-    content: "ï€گ";
+
+.lightbox-gallery .lightbox-gallery-toolbar button.lightbox-gallery-zoom-btn.active:before {
+    content: "\f010"; /* Zoom Out */
 }
 .lightbox-gallery
     .lightbox-gallery-toolbar
     button.lightbox-gallery-close-btn:before {
-    content: "";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Solid style */
+    content: "\f00d"; /* Close (X) icon */
 }
 .lightbox-gallery .lightbox-gallery-counter {
     height: 100%;
@@ -17774,11 +17773,11 @@ fieldset:disabled .btn-group-vertical {
 .lightbox-gallery .lightbox-gallery-arrow-left button:hover {
     color: #fff;
 }
-.lightbox-gallery .lightbox-gallery-arrow-left button:before {
-    font-family: Font Awesome\5 Free;
-    font-weight: 900;
-    content: "ïپ،";
-}
+.lightbox-gallery .lightbox-gallery-arrow-left button::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; /* Solid style */
+    content: "\f061"; /* Left Arrow */
+  }
 .lightbox-gallery .lightbox-gallery-arrow-left button.fontawesome-pro:before {
     font-family: Font Awesome\5 Pro;
 }
@@ -17809,16 +17808,19 @@ fieldset:disabled .btn-group-vertical {
     -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
+
 .lightbox-gallery .lightbox-gallery-arrow-right button:hover {
     color: #fff;
 }
+
 .lightbox-gallery .lightbox-gallery-arrow-right button:before {
-    font-family: Font Awesome\5 Free;
-    font-weight: 900;
-    content: "ïپ ";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900; /* Font Awesome 6 uses 900 for solid icons */
+    content: "\f060"; /* Right Arrow */
 }
+
 .lightbox-gallery .lightbox-gallery-arrow-right button.fontawesome-pro:before {
-    font-family: Font Awesome\5 Pro;
+    font-family: "Font Awesome 6 Free";
 }
 .lightbox-gallery .lightbox-gallery-caption-wrapper {
     position: fixed;

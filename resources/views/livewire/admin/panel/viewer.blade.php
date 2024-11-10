@@ -61,6 +61,28 @@
                                             title="Show">
                                             <i class="fas fa-file-zipper"></i>
                                         </a>
+
+                                        @php
+                                            $x = 1;
+                                        @endphp
+
+                                        <a class="lightbox me-2 ms-2">
+                                            @foreach ($solution->images as $image)
+                                                @if ($x == 1)
+                                                    <img src="{{ asset('assets/admin/images/image.png') }}"
+                                                        data-mdb-img="{{ $image->photo_table }}" width="20"
+                                                        height="20">
+                                                @endif
+
+                                                <img src="{{ $image->photo_table }}"
+                                                    data-mdb-img="{{ $image->photo_table }}" width="20"
+                                                    height="20" style="display: none;">
+                                                @php
+                                                    $x = $x + 1;
+                                                @endphp
+                                            @endforeach
+                                        </a>
+
                                     </td>
                                 </tr>
 
