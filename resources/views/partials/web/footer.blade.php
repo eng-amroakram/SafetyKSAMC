@@ -77,7 +77,7 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
                         <h6 class="text-uppercase fw-bold mb-4">تواصل</h6>
-                        <p><i class="fas fa-home me-3"></i> الرياض، المملكة العربية السعودية</p>
+                        <p><i class="fas fa-home me-3"></i> المدينة المنورة، المملكة العربية السعودية</p>
                         {{-- <p>
                             <i class="fas fa-envelope me-3"></i>
                             info@example.com
@@ -95,7 +95,7 @@
         <!-- Copyright -->
         <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.1);">
             © 2024 حقوق النشر:
-            <a class="text-reset fw-bold" href="#">قسم السلامة المهنية</a>
+            <a class="text-reset fw-bold" href="#">شروق السحيمي</a>
         </div>
         <!-- Copyright -->
     </footer>
