@@ -46,8 +46,8 @@ trait PDFHelper
             'procEnv' => [
                 'LANG' => 'ar_SA.utf-8',
             ],
-            'command' => 'C:\Program Files (x86)\PDFtk\bin\pdftk.exe',
-            'useExec' => true,
+            // 'command' => 'C:\Program Files (x86)\PDFtk\bin\pdftk.exe',
+            // 'useExec' => true,
         ]);
 
         $result = $pdf->fillForm($fillable)

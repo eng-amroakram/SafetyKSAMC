@@ -59,7 +59,7 @@
                                         <a type="button" class="text-danger fa-lg me-2 ms-2 imagesDownload"
                                             wire:click="downloadImages({{ $solution->id }})" href="#"
                                             title="Show">
-                                            <i class="far fa-images"></i>
+                                            <i class="fas fa-file-zipper"></i>
                                         </a>
                                     </td>
                                 </tr>
@@ -149,7 +149,7 @@
             });
 
             // Listen for the Livewire event to download the file
-            Livewire.on('downloadFile',function(event){
+            Livewire.on('downloadFile', function(event) {
                 const link = document.createElement('a');
                 link.href = event[0].url;
                 link.download = 'images.zip';

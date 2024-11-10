@@ -4,7 +4,7 @@
          <div class="row align-items-center">
              <!-- Left Column: Image -->
              <div class="col-md-6 p-5 text-center">
-                 <img src="{{ asset('assets/web/images/jumbotron.webp') }}" alt="Jumbotron Image"
+                 <img src="{{ asset('assets/admin/images/login.webp') }}" alt="Jumbotron Image"
                      class="img-fluid rounded-pill" style="max-width: 70%;">
              </div>
              <!-- Right Column: Title and Text -->
