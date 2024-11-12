@@ -1,11 +1,11 @@
 <nav id="sidenav-1" class="sidenav ps ps--active-y" data-mdb-color="light" style="background-color: #2d2c2c"
-    role="navigation" data-mdb-mode="side" data-mdb-right="false" data-mdb-hidden="false" data-mdb-accordion="true">
+    role="navigation" data-mdb-mode="side" data-mdb-right="false" data-mdb-hidden="true" data-mdb-accordion="true">
 
     <a class="ripple d-flex justify-content-center py-5" style="padding-top: 5rem !important;"
         href="{{ route('admin.panel.index') }}" data-ripple-color="primary">
 
-        <img id="SafteyKSAMC-Logo" width="200" src="{{ asset('assets/web/images/logo.jpeg') }}" alt="SafteyKSAMC-Logo"
-            draggable="false" />
+        <img id="SafteyKSAMC-Logo" width="200" src="{{ asset('assets/web/images/logo.jpeg') }}"
+            alt="SafteyKSAMC-Logo" draggable="false" />
     </a>
 
     <ul class="sidenav-menu">

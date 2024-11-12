@@ -84,6 +84,30 @@
 
             // Event listeners
             window.addEventListener("resize", setMode);
+
+            $(".navbar-toggler").on("click", function() {
+                const sidebar = $("#sidenav-1");
+                console.log(sidebar.css("transform"));
+                if (sidebar.css("transform") ===
+                    "matrix(1, 0, 0, 1, 0, 0)") { // Default state: translateX(0%)
+                    sidebar.css("transform", "translateX(100%)"); // Move the sidebar out of view
+                } else {
+                    sidebar.css("transform", "translateX(0%)"); // Move the sidebar into view
+                }
+            });
+
+            // Hide sidebar when clicking anywhere outside of the sidebar
+            $(document).on("click", function(e) {
+                const sidebar = $("#sidenav-1");
+                if (!$(e.target).closest("#sidenav-1, .navbar-toggler").length) {
+                    sidebar.css("transform", "translateX(100%)"); // Move sidebar out of view
+                }
+            });
+
+            // Prevent sidebar from closing when clicking inside it
+            $("#sidenav-1").on("click", function(e) {
+                e.stopPropagation(); // Prevent click from closing the sidebar when clicking inside it
+            });
         });
     </script>
 
