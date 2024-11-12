@@ -8,7 +8,7 @@ use Livewire\Component;
 
 class Landing extends Component
 {
-    #[Layout('layouts.web.app'), Title('قسم السلامة المهنية')]
+    #[Layout('layouts.web.app'), Title('قسم السلامة')]
     public function render()
     {
         return view('livewire.web.landing');

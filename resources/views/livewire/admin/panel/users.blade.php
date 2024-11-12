@@ -2,7 +2,7 @@
     <div class="p-4 mb-4">
 
         <div class="row mb-4" wire:ignore>
-            @livewire('partials.page-header', ['title' => 'الموظفين', 'label' => 'موظف', 'model' => false, 'user' => false])
+            @livewire('partials.page-header', ['title' => 'الموظفين', 'label' => 'موظف', 'model' => true, 'user' => false])
         </div>
 
         <!-- Data Tables -->

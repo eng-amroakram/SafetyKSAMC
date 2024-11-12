@@ -30,7 +30,7 @@ class Home extends Component
         $this->user = auth()->user();
     }
 
-    #[Layout('layouts.web.app'), Title('قسم السلامة المهنية - الرئيسية')]
+    #[Layout('layouts.web.app'), Title('قسم السلامة - الرئيسية')]
     public function render()
     {
         return view('livewire.web.home');
@@ -51,7 +51,7 @@ class Home extends Component
                     if ($this->form_name == "direct_status_report") {
                         $data['images']['image'] = $this->image;
                     }
-                    
+
                     if ($this->form_name == "daily_tour") {
                         $data['images']['location_image_1'] = $this->location_image_1;
                         $data['images']['location_image_2'] = $this->location_image_2;

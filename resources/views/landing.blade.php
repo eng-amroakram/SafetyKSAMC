@@ -10,8 +10,8 @@
             </div>
             <!-- Right Column: Title and Text -->
             <div class="col-md-6">
-                <h1 class="mb-3">قسم السلامة المهنية</h1>
-                <h4 class="mb-3">اهلا وسهلا بكم في قسم السلامة المهنية - مدينة الملك سلمان الطبية</h4>
+                <h1 class="mb-3">قسم السلامة</h1>
+                <h4 class="mb-3">اهلا وسهلا بكم في قسم السلامة - مدينة الملك سلمان الطبية</h4>
                 <a data-mdb-ripple-init class="btn btn-light" href="{{ route('web.login') }}" role="button">تسجيل
                     الدخول</a>
             </div>
@@ -24,7 +24,7 @@
     <div id="about-us" class="container my-4 text-white text-center py-5 section-background">
         <h2 class="mb-4">من نحن؟</h2>
         <p class="lead" style="font-size: 1.2rem;">
-            نحن فريق قسم السلامة المهنية في مدينة الملك سلمان الطبية، حيث نكرس جهودنا لضمان بيئة عمل آمنة وصحية لجميع
+            نحن فريق قسم السلامة في مدينة الملك سلمان الطبية، حيث نكرس جهودنا لضمان بيئة عمل آمنة وصحية لجميع
             الموظفين والمرضى.
         </p>
 
@@ -61,7 +61,7 @@
     <div id="our-services" class="container my-4 text-white text-center py-5 section-background">
         <h2 class="mb-4">خدماتنا</h2>
         <p class="mb-5">
-            نحن فريق قسم السلامة المهنية في مدينة الملك سلمان الطبية. نقدم مجموعة شاملة من الخدمات لتعزيز بيئة عمل آمنة
+            نحن فريق قسم السلامة في مدينة الملك سلمان الطبية. نقدم مجموعة شاملة من الخدمات لتعزيز بيئة عمل آمنة
             وصحية لجميع الموظفين والمرضى.
         </p>
         <div class="row">

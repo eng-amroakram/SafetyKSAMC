@@ -15,7 +15,7 @@ class Signature extends Component
 
     public $signed = '';
 
-    #[Layout('layouts.web.signature'), Title('قسم السلامة المهنية - التوقيع')]
+    #[Layout('layouts.web.signature'), Title('قسم السلامة - التوقيع')]
     public function render()
     {
         return view('livewire.web.signature');
