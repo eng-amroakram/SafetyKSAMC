@@ -12,6 +12,11 @@
                 <!-- Collapsible wrapper -->
                 <div class="collapse navbar-collapse" id="navbarRightAlignExample">
 
+                    <button style="display: inline;" class="navbar-toggler" type="button" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
 
                     <!-- Navbar brand -->
                     <a class="navbar-brand mt-2 mt-lg-0" href="#">
