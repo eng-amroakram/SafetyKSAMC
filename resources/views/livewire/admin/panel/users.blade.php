@@ -122,7 +122,7 @@
                                             <span class="input-group-text">
                                                 <i class="far fa-user"></i>
                                             </span>
-                                            <input type="text" wire:model.defer="name" maxlength="15"
+                                            <input type="text" wire:model.defer="name" maxlength="50"
                                                 class="form-control" placeholder="ادخل اسم الموظف" />
                                         </div>
                                         <div class="form-helper text-danger name-validation reset-validation"></div>
