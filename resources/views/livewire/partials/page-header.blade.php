@@ -34,20 +34,6 @@
                 </div>
             @endif
 
-            @if ($model)
-                <div class="d-flex align-items-center pe-3">
-                    <a class="btn btn-sm {{ $user->signature ? 'btn-success' : 'btn-danger' }}  downloadSignature">
-                        <i class="fas fa-signature me-2"></i>
-                        @if ($user->signature)
-                            <span>تحميل توقيع الموظف</span>
-                        @else
-                            <span>الموظيف لم يوقع بعد !</span>
-                        @endif
-
-                    </a>
-                </div>
-            @endif
-
             @if ($perm)
                 <div class="d-flex align-items-center pe-3">
                     <a class="dropdown-item" data-mdb-toggle="modal" data-mdb-target="{{ '#user-modal' }}"
