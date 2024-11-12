@@ -1,5 +1,5 @@
 <!-- "تسجيل الدخول" Section -->
-<div class="container my-4 py-5 d-flex flex-column align-items-center">
+<section class="container my-4 py-5 d-flex flex-column align-items-center">
 
     <style>
         .form-control:focus {
@@ -77,7 +77,7 @@
     <p class="mt-4" style="font-size: 1rem;">
         <a href="#" class="">نسيت كلمة المرور؟</a>
     </p>
-</div>
+</section>
 
 @push('admin-login-script')
     <script>

@@ -21,9 +21,6 @@
 
 
 
-
-
-
     <!-- "من نحن؟" Section -->
     <div id="about-us" class="container my-4 text-white text-center py-5 section-background">
         <h2 class="mb-4">من نحن؟</h2>
