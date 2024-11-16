@@ -18,7 +18,7 @@
                 </div> --}}
 
                 <div class="col-md-3">
-                    <select class="select selectForm" wire:model="form">
+                    <select class="select selectForm" wire:model="form" data-mdb-filter="true">
                         <option value="">اختر احد الفورمات</option>
                         @foreach ($forms as $form)
                             <option value="{{ $form->id }}">{{ __("$form->name") }}</option>
@@ -56,11 +56,13 @@
                                             wire:click="openForm({{ $solution->id }})" href="#" title="Show">
                                             <i class="fas fa-eye"></i>
                                         </a>
-                                        <a type="button" class="text-danger fa-lg me-2 ms-2 imagesDownload"
-                                            wire:click="downloadImages({{ $solution->id }})" href="#"
-                                            title="Show">
-                                            <i class="fas fa-file-zipper"></i>
-                                        </a>
+                                        @if (in_array($solution->form_id, [2, 3]))
+                                            <a type="button" class="text-danger fa-lg me-2 ms-2 imagesDownload"
+                                                wire:click="downloadImages({{ $solution->id }})" href="#"
+                                                title="Show" wire:ignore.self>
+                                                <i class="fas fa-file-zipper"></i>
+                                            </a>
+                                        @endif
 
                                         @php
                                             $x = 1;
@@ -143,6 +145,8 @@
             var $selectPagination = $(".selectPagination");
             var $pdfframe = $("#pdfframe");
             var $downloadSignature = $('.downloadSignature');
+
+            $imagesDownload.hide();
 
             $selectForm.on('change', function() {
                 let $user_action = $(this);

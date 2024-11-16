@@ -70,8 +70,10 @@
         </div>
 
         <!-- Submit Button -->
-        <button type="submit" class="btn text-white btn-lg w-100 submitting-login-button background-blue">تسجيل
-            الدخول</button>
+        <button type="submit" class="btn text-white btn-lg w-100 submitting-login-button background-blue">
+            <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" wire:loading></span>
+            تسجيل الدخول
+        </button>
     </div>
 
     <p class="mt-4" style="font-size: 1rem;">

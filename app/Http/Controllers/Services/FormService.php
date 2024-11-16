@@ -22,7 +22,7 @@ class FormService extends Controller
 
         if(in_array($form_name, ["direct_status_report", 'daily_tour']))
         {
-            $solution['time'] =  now()->format('h:i:s');
+            $solution['time'] =  now()->format('h:i:s A');
             $solution['day'] =  now()->format('D');
         }
 

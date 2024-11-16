@@ -3122,9 +3122,12 @@
 
             $inspection_section_select.on('change', function() {
                 var $user_action = $(this);
+
                 document.querySelectorAll('.tab-pane-selector').forEach(tab => {
                     tab.classList.remove('show', 'active');
                 });
+
+                // $imagesDownload
                 document.getElementById($user_action.val()).classList.add('show', 'active');
             });
 

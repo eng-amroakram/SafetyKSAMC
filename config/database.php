@@ -63,6 +63,20 @@ return [
             ]) : [],
         ],
 
+        'safe' => [
+            'driver' => 'mysql', // or the database driver you're using (e.g., pgsql, sqlite)
+            'host' => env('DB_SAFE_HOST', '127.0.0.1'),
+            'port' => env('DB_SAFE_PORT', '3306'),
+            'database' => env('DB_SAFE_DATABASE', 'safe'),
+            'username' => env('DB_SAFE_USERNAME', 'root'),
+            'password' => env('DB_SAFE_PASSWORD', ''),
+            'charset' => 'utf8mb4',
+            'collation' => 'utf8mb4_unicode_ci',
+            'prefix' => '',
+            'strict' => true,
+            'engine' => null,
+        ],
+
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
@@ -125,7 +139,7 @@ return [
 
         'options' => [
             'cluster' => env('REDIS_CLUSTER', 'redis'),
-            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_').'_database_'),
+            'prefix' => env('REDIS_PREFIX', Str::slug(env('APP_NAME', 'laravel'), '_') . '_database_'),
         ],
 
         'default' => [

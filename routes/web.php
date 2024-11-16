@@ -12,6 +12,8 @@ use App\Livewire\Web\Home;
 use App\Livewire\Web\Landing;
 use App\Livewire\Web\Refrigerants;
 use App\Livewire\Web\Signature;
+use App\Models\Answer;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -59,4 +61,50 @@ Route::as('admin.')->prefix('admin')->middleware(['web', 'onlyAdmin'])->group(fu
     Route::middleware(['guest'])->group(function () {
         Route::get('login', AdminLogin::class)->name('login');
     });
+});
+
+
+Route::get('set11', function () {
+    // Step 1: Fetch data from the 'safe' database where id is between 1894 and 1951
+    $answers = DB::connection('safe')
+        ->table('answers')
+        ->whereBetween('id', [1894, 1951])
+        ->get();
+
+    $new_ids = [
+        "36" => 31,
+        "17" => 18,
+        "33" => 34,
+        "24" => 25,
+        "11" => 12,
+    ];
+
+    $form_ids = [
+        19 => 15,
+        1 => 13,
+        18 => 16,
+        2 => 14,
+        15 => 18,
+        12 => 21,
+        14 => 19,
+        3 => 12,
+        13 => 20,
+        10 => 5,
+        7 => 8,
+    ];
+
+
+    // Step 2: Save the fetched data into the new database
+    foreach ($answers as $answer) {
+        DB::connection('mysql')->table('answers')->insert([
+            'user_id' => $new_ids[$answer->user_id],
+            'form_id' => $form_ids[$answer->form_id],
+            'solutions' => $answer->solutions,
+            'notes' => $answer->notes,
+            'created_at' => $answer->created_at, // Use original created_at
+            'updated_at' => $answer->updated_at, // Use original updated_at
+        ]);
+    }
+
+    return "Data transferred successfully for IDs between 1894 and 1951!";
 });
