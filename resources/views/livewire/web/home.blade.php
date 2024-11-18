@@ -236,8 +236,7 @@
 
                         <div class="row mb-4">
                             <div class="col-md-12">
-                                <x-file-input name="image" model="form"
-                                label="صورة الحالة"></x-file-input>
+                                <x-file-input name="image" model="form" label="صورة الحالة"></x-file-input>
                             </div>
                         </div>
 
@@ -247,7 +246,8 @@
                                     class="btn btn-lg text-white btn-block submit"
                                     style="background-color: #7a9e85; font-weight: 700;">
                                     حفظ البيانات
-                                    <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" wire:loading></span>
+                                    <span class="spinner-border spinner-border-sm me-2" role="status"
+                                        aria-hidden="true" wire:loading></span>
                                 </button>
                             </div>
                         </div>
@@ -301,8 +301,8 @@
                                             </td>
 
                                             <td>
-                                                <x-file-input name="{{'location_image_' . $x}}" model="form"
-                                                label=""></x-file-input>
+                                                <x-file-input name="{{ 'location_image_' . $x }}" model="form"
+                                                    label=""></x-file-input>
                                             </td>
 
 
@@ -330,7 +330,8 @@
                                     class="btn btn-lg text-white btn-block submit"
                                     style="background-color: #7a9e85; font-weight: 700;">
                                     حفظ البيانات
-                                    <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" wire:loading></span>
+                                    <span class="spinner-border spinner-border-sm me-2" role="status"
+                                        aria-hidden="true" wire:loading></span>
                                 </button>
                             </div>
                         </div>
@@ -345,7 +346,8 @@
 
         </div>
 
-        <div class="tab-pane fade" id="monthly_tours_pill_id" role="tabpanel" aria-labelledby="monthly_tours_pill" wire:ignore>
+        <div class="tab-pane fade" id="monthly_tours_pill_id" role="tabpanel" aria-labelledby="monthly_tours_pill"
+            wire:ignore>
             <div>
                 <div class="row mb-4">
                     <div class="col-md-6">
@@ -1045,25 +1047,20 @@
 
                                             <td>
                                                 <input class="form-check-input checkboxradio" type="radio"
-                                                    name="{{ 'row_' . $x }}" value="{{ 'no_' . $x }}"
-                                                    id="{{ 'no_' . $x }}" />
+                                                    name="{{ 'row_' . $x }}" value="{{ 'sat_' . $x }}"
+                                                    id="{{ 'sat_' . $x }}" />
 
                                             </td>
 
                                             <td>
                                                 <input class="form-check-input checkboxradio" type="radio"
-                                                    name="{{ 'row_' . $x }}" value="{{ 'yes_' . $x }}"
-                                                    id="{{ 'yes_' . $x }}" />
+                                                    name="{{ 'row_' . $x }}" value="{{ 'un_' . $x }}"
+                                                    id="{{ 'un_' . $x }}" />
 
                                             </td>
                                             <td>
                                                 <button type="button" class="btn btn-sm clearbutton"
                                                     row="{{ 'row_' . $x }}">Clear</button>
-                                            </td>
-
-                                            <td>
-                                                <input type="text" class="form-control textfield"
-                                                    name="{{ 'comment_' . $x }}" />
                                             </td>
                                             <td>{{ $key }}</td>
                                             <td>{{ $x }}</td>
@@ -2883,7 +2880,8 @@
             </div>
         </div>
 
-        <div class="tab-pane fade" id="annual_tours_pill_id" role="tabpanel" aria-labelledby="annual_tours_pill" wire:ignore>
+        <div class="tab-pane fade" id="annual_tours_pill_id" role="tabpanel" aria-labelledby="annual_tours_pill"
+            wire:ignore>
             <div>
                 <ul class="nav nav-tabs mb-3" id="dailyToursTab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -3149,10 +3147,10 @@
 
             });
 
-            $imagefield.on('change',function(e){
+            $imagefield.on('change', function(e) {
                 let $user_action = $(this);
                 const $file = e.target.files[0];
-                if($file){
+                if ($file) {
                     $data[$user_action.attr('name')] = $file;
                 }
             });

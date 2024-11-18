@@ -22,7 +22,7 @@ return [
             "generators" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "Question", "Count"],
             "boilers" => ["الترتيب", "السؤال", "NA", "NO", "YES",   "Clear", "Question", "Count"],
             "fire_sprinklers" => ["الترتيب", "السؤال", "Status", "Question", "Count"],
-            "FM200" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "الملاحظات", "Question", "Count"],
+            "FM200" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "Question", "Count"],
             "CO2" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "الملاحظات", "Question", "Count"],
             "external_warehouses" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "الملاحظات", "Question", "Count"],
             "staircase" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "الملاحظات", "Question", "Count"],
