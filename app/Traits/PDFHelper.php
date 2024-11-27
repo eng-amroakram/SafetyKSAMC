@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Traits;
+
 use mikehaertl\pdftk\Pdf;
 
 trait PDFHelper
