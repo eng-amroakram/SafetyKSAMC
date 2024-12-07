@@ -65,46 +65,72 @@ Route::as('admin.')->prefix('admin')->middleware(['web', 'onlyAdmin'])->group(fu
 
 
 Route::get('set11', function () {
-    // Step 1: Fetch data from the 'safe' database where id is between 1894 and 1951
-    $answers = DB::connection('safe')
-        ->table('answers')
-        ->whereBetween('id', [1894, 1951])
-        ->get();
+    // // Step 1: Fetch data from the 'safe' database where id is between 1894 and 1951
+    // $answers = DB::connection('safe')
+    //     ->table('answers')
+    //     ->whereBetween('id', [1894, 1951])
+    //     ->get();
 
-    $new_ids = [
-        "36" => 31,
-        "17" => 18,
-        "33" => 34,
-        "24" => 25,
-        "11" => 12,
-    ];
+    // $new_ids = [
+    //     "36" => 31,
+    //     "17" => 18,
+    //     "33" => 34,
+    //     "24" => 25,
+    //     "11" => 12,
+    // ];
 
-    $form_ids = [
-        19 => 15,
-        1 => 13,
-        18 => 16,
-        2 => 14,
-        15 => 18,
-        12 => 21,
-        14 => 19,
-        3 => 12,
-        13 => 20,
-        10 => 5,
-        7 => 8,
-    ];
+    // $form_ids = [
+    //     19 => 15,
+    //     1 => 13,
+    //     18 => 16,
+    //     2 => 14,
+    //     15 => 18,
+    //     12 => 21,
+    //     14 => 19,
+    //     3 => 12,
+    //     13 => 20,
+    //     10 => 5,
+    //     7 => 8,
+    // ];
 
 
-    // Step 2: Save the fetched data into the new database
-    foreach ($answers as $answer) {
-        DB::connection('mysql')->table('answers')->insert([
-            'user_id' => $new_ids[$answer->user_id],
-            'form_id' => $form_ids[$answer->form_id],
-            'solutions' => $answer->solutions,
-            'notes' => $answer->notes,
-            'created_at' => $answer->created_at, // Use original created_at
-            'updated_at' => $answer->updated_at, // Use original updated_at
-        ]);
+    // // Step 2: Save the fetched data into the new database
+    // foreach ($answers as $answer) {
+    //     DB::connection('mysql')->table('answers')->insert([
+    //         'user_id' => $new_ids[$answer->user_id],
+    //         'form_id' => $form_ids[$answer->form_id],
+    //         'solutions' => $answer->solutions,
+    //         'notes' => $answer->notes,
+    //         'created_at' => $answer->created_at, // Use original created_at
+    //         'updated_at' => $answer->updated_at, // Use original updated_at
+    //     ]);
+    // }
+
+    // return "Data transferred successfully for IDs between 1894 and 1951!";
+    $data = config('data.forms.table-body');
+    $count = 1;
+
+    foreach ($data as $type => $forms) {
+
+        foreach ($forms as $form => $questions) {
+
+            if (in_array($form, ['weekly_warehouse', 'external_weekly_warehouses'])) {
+
+                DB::table('forms')->insert([
+                    'name' => $form,
+                    'type' => $type,
+                    'created_at' => now()
+                ]);
+
+                foreach ($questions as $question_en => $question_ar) {
+                    DB::table('questions')->insert([
+                        'question' => $question_en,
+                        'form_id' => $count,
+                        'created_at' => now()
+                    ]);
+                }
+            }
+            $count = $count + 1;
+        }
     }
-
-    return "Data transferred successfully for IDs between 1894 and 1951!";
 });
