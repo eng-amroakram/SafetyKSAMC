@@ -107,30 +107,36 @@ Route::get('set11', function () {
     // }
 
     // return "Data transferred successfully for IDs between 1894 and 1951!";
-    $data = config('data.forms.table-body');
-    $count = 1;
+    $data = config('data.forms.table-body.weekly');
 
-    foreach ($data as $type => $forms) {
+    foreach ($data as $form => $questions) {
 
-        foreach ($forms as $form => $questions) {
+        if ($form == "external_weekly_warehouses") {
+            DB::table('forms')->insert([
+                'name' => $form,
+                'type' => "weekly",
+                'created_at' => now()
+            ]);
+        }
 
-            if (in_array($form, ['weekly_warehouse', 'external_weekly_warehouses'])) {
-
-                DB::table('forms')->insert([
-                    'name' => $form,
-                    'type' => $type,
+        if ($form == "weekly_warehouse") {
+            foreach ($questions as $question_en => $question_ar) {
+                DB::table('questions')->insert([
+                    'question' => $question_en,
+                    'form_id' => 24,
                     'created_at' => now()
                 ]);
-
-                foreach ($questions as $question_en => $question_ar) {
-                    DB::table('questions')->insert([
-                        'question' => $question_en,
-                        'form_id' => $count,
-                        'created_at' => now()
-                    ]);
-                }
             }
-            $count = $count + 1;
+        }
+
+        if ($form == "external_weekly_warehouses") {
+            foreach ($questions as $question_en => $question_ar) {
+                DB::table('questions')->insert([
+                    'question' => $question_en,
+                    'form_id' => 25,
+                    'created_at' => now()
+                ]);
+            }
         }
     }
 });
