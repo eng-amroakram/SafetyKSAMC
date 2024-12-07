@@ -109,34 +109,34 @@ Route::get('set11', function () {
     // return "Data transferred successfully for IDs between 1894 and 1951!";
     $data = config('data.forms.table-body.weekly');
 
-    foreach ($data as $form => $questions) {
+    // foreach ($data as $form => $questions) {
 
-        if ($form == "external_weekly_warehouses") {
-            DB::table('forms')->insert([
-                'name' => $form,
-                'type' => "weekly",
-                'created_at' => now()
-            ]);
-        }
+    //     if ($form == "external_weekly_warehouses") {
+    //         DB::table('forms')->insert([
+    //             'name' => $form,
+    //             'type' => "weekly",
+    //             'created_at' => now()
+    //         ]);
+    //     }
 
-        if ($form == "weekly_warehouse") {
-            foreach ($questions as $question_en => $question_ar) {
-                DB::table('questions')->insert([
-                    'question' => $question_en,
-                    'form_id' => 24,
-                    'created_at' => now()
-                ]);
-            }
-        }
+    //     if ($form == "weekly_warehouse") {
+    //         foreach ($questions as $question_en => $question_ar) {
+    //             DB::table('questions')->insert([
+    //                 'question' => $question_en,
+    //                 'form_id' => 24,
+    //                 'created_at' => now()
+    //             ]);
+    //         }
+    //     }
 
-        if ($form == "external_weekly_warehouses") {
-            foreach ($questions as $question_en => $question_ar) {
-                DB::table('questions')->insert([
-                    'question' => $question_en,
-                    'form_id' => 25,
-                    'created_at' => now()
-                ]);
-            }
-        }
-    }
+    //     if ($form == "external_weekly_warehouses") {
+    //         foreach ($questions as $question_en => $question_ar) {
+    //             DB::table('questions')->insert([
+    //                 'question' => $question_en,
+    //                 'form_id' => 25,
+    //                 'created_at' => now()
+    //             ]);
+    //         }
+    //     }
+    // }
 });
