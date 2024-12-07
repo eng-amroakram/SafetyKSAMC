@@ -34,7 +34,12 @@ trait PDFHelper
             "generators" => "generators.pdf",
             "refrigerants" => "refrigerants.pdf",
             "boilers" => "boilers.pdf",
-            "breakersfm" => "breakersfm.pdf"
+            "breakersfm" => "breakersfm.pdf",
+
+            "weekly_warehouse" => "weekly_warehouse.pdf",
+            "external_weekly_warehouses" => "external_weekly_warehouses.pdf",
+
+
         ];
 
         $name = $nameFiles[$form->name];

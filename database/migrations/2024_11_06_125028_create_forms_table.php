@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('forms', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->enum('type', ['monthly', 'annual', 'daily']);
+            $table->enum('type', ['monthly', 'annual', 'daily', 'weekly']);
             $table->softDeletes();
             $table->timestamps();
         });

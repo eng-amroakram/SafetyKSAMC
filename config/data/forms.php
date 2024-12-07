@@ -14,7 +14,10 @@ return [
             "daily_tour" => ["الترتيب", "الملاحظة", "الموقع", "الاجراء المتخذ", "صورة الموقع"],
             "direct_status_report" => [],
         ],
-
+        "weekly" => [
+            "weekly_warehouse" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "Question", "Count"],
+            "external_weekly_warehouses" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "Question", "Count"],
+        ],
 
         "monthly" => [
             "refrigerants" => ["الترتيب", "السؤال", "NA", "NO", "YES", "Clear", "Question", "Count"],
@@ -367,6 +370,39 @@ return [
                 "Warning lighting" => "الانارة التحذيرية",
                 "The warning sound is audible" => "الصوت التحذيري مسموع",
             ]
+        ],
+
+        "weekly" => [
+            "weekly_warehouse" => [
+                "The shelves are installed and in good condition." => "الرفوف متينة وبحالة جيدة",
+                "There are items stored directly on the ground (leaving at least 10 cm)." => "توجد عناصر مخزنة مباشرة على الارض (ترك 10 سنتيمترات على الاقل)",
+                "The elements are placed on a flat base." => "العناصر موضوعة على قاعدة مسطحة",
+                "Heavy objects are stored in the lower areas close to the ground, and light and small objects are stored in the upper shelves." => "الاجسام الثقيلة مخزنة في المناطق السفلية قريبة من الارض والاجسام الخفيفة والصغيرة بالرفوف العلوية",
+                "The stores are organized, tidy, and stored a distance of 50 cm form the ceiling." => "المخازن منظمة ومرتبة على بعد 50 سم من السقف",
+                "Storge is orderly and not random." => "تخزين منظم وغير عشوائي",
+                "The temperature and humidity are appropriate." => "درجة الحرارة والرطوبة مناسبة",
+                "Ventilation and lighting are in good condition." => "التهوية والإضاءة بحالة جيدة",
+                "The we rehouse is clean." => "المستودع نظيف",
+                "The warehouse is equipped with appropriate." => "المستودع مجهز لمعدات الإطفاء المناسبة",
+                "Medical gas cylinders are well chaired." => "اسطوانات الغاز الطبية مثبته بشكل جيد",
+
+            ],
+
+            "external_weekly_warehouses" => [
+                "Directions to exit available." => "توجد لوحات تشير الى المخرج",
+                "Exit sign light is operable." => "إضاءة لوحة المخرج تعمل جيدا",
+                "Escape routes/Corridors are not clear." => "توجد عوائق في طريق الهروب / المخارج",
+                "Safety plates." => "لوحات السلامة",
+                "Area is clean." => "الموقع نظيف",
+                "Electrical cables/wires are not exposed." => "الكيابل / الاسلاك الكهربائية غير مكشوفة",
+                "Electrical cables/wires trays covered." => "رفوف الاسلاك / الكيابل الكهربائية مغطاة",
+                "Emergency light's working." => "كشافات الطوارىء تعمل",
+                "Fire alarm break glass call point in good condition." => "نظام الإنذار بكسر الزجاج في حالة جيدة",
+                "Fire extinguishers are inspected." => "الطفايات تم فحصها",
+                "Telephones are available." => "التليفونات متوفرة",
+                "No smoking signs are posted." => "لوحات ممنوع التدخين ملصقة على الحائط",
+                "There is a cigarette buttes." => "يوجد اعقاب سجائر",
+            ],
         ],
     ],
 
