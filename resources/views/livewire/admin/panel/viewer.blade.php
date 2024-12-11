@@ -102,7 +102,7 @@
                 </div>
 
                 <!-- Table Pagination -->
-                <div class="d-flex justify-content-between mt-4">
+                <div class="d-flex justify-content-between mt-4" wire:ignore>
 
                     <nav aria-label="...">
                         <ul class="pagination pagination-circle">
@@ -110,7 +110,7 @@
                         </ul>
                     </nav>
 
-                    <div class="col-md-1" wire:ignore>
+                    <div class="col-md-1">
                         <select class="select selectPagination" wire:model="pagination">
                             <option value="5">5</option>
                             <option value="10" selected>10</option>
