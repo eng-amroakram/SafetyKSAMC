@@ -105,7 +105,7 @@
                 <div class="d-flex justify-content-between mt-4" wire:ignore.self>
 
                     <nav aria-label="..." wire:ignore.self>
-                        <ul class="pagination pagination-circle" wire:ignore>
+                        <ul class="pagination pagination-circle" wire:ignore.self>
                             {{ $solutions->withQueryString()->onEachSide(0)->links() }}
                         </ul>
                     </nav>
