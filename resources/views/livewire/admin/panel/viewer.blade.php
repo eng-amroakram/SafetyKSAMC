@@ -102,15 +102,15 @@
                 </div>
 
                 <!-- Table Pagination -->
-                <div class="d-flex justify-content-between mt-4" wire:ignore>
+                <div class="d-flex justify-content-between mt-4" wire:ignore.self>
 
-                    <nav aria-label="...">
-                        <ul class="pagination pagination-circle">
+                    <nav aria-label="..." wire:ignore.self>
+                        <ul class="pagination pagination-circle" wire:ignore.self>
                             {{ $solutions->withQueryString()->onEachSide(0)->links() }}
                         </ul>
                     </nav>
 
-                    <div class="col-md-1">
+                    <div class="col-md-1" wire:ignore>
                         <select class="select selectPagination" wire:model="pagination">
                             <option value="5">5</option>
                             <option value="10" selected>10</option>
