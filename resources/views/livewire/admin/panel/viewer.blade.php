@@ -102,10 +102,10 @@
                 </div>
 
                 <!-- Table Pagination -->
-                <div class="d-flex justify-content-between mt-4" wire:ignore.self>
+                <div class="d-flex justify-content-between mt-4">
 
-                    <nav aria-label="..." wire:ignore.self>
-                        <ul class="pagination pagination-circle" wire:ignore.self>
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-circle">
                             {{ $solutions->withQueryString()->onEachSide(0)->links() }}
                         </ul>
                     </nav>
@@ -125,7 +125,7 @@
             </div>
 
             <div class="col-md-6">
-                <div class="card" wire:ignore.self>
+                <div class="card">
                     <iframe id="pdfframe" src="{{ $pdf_path }}" width="100%" height="670px">
                     </iframe>
                 </div>

@@ -23,7 +23,7 @@ class Viewer extends Component
     public $forms = [];
     public $form = null;
     public $form_id = null;
-    public $pagination = 10;
+    public $pagination = 100;
     public $pdf_path = '';
 
 
