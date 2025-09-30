@@ -66,17 +66,17 @@ Route::as('admin.')->prefix('admin')->middleware(['web', 'onlyAdmin'])->group(fu
 
 
 Route::get('fixes', function () {
-    $currentYear = Carbon::now()->year;
+    // $currentYear = Carbon::now()->year;
 
-    // احذف كل السجلات التي ليست من شهر 9 من نفس السنة
-    Answer::whereYear('created_at', $currentYear)
-        ->whereMonth('created_at', '<', 9)
-        ->delete();
+    // // احذف كل السجلات التي ليست من شهر 9 من نفس السنة
+    // Answer::whereYear('created_at', $currentYear)
+    //     ->whereMonth('created_at', '<', 9)
+    //     ->delete();
 
-    // جلب السجلات المتبقية بعد الحذف (فقط شهر 9)
-    $answers = Answer::whereYear('created_at', $currentYear)
-        ->whereMonth('created_at', 9)
-        ->get();
+    // // جلب السجلات المتبقية بعد الحذف (فقط شهر 9)
+    // $answers = Answer::whereYear('created_at', $currentYear)
+    //     ->whereMonth('created_at', 9)
+    //     ->get();
 
-    dd($answers->count(), $answers);
+    // dd($answers->count(), $answers);
 });
