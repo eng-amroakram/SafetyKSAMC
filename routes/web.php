@@ -65,5 +65,6 @@ Route::as('admin.')->prefix('admin')->middleware(['web', 'onlyAdmin'])->group(fu
 
 
 Route::get('fixes', function () {
-
+    $answers = Answer::all();
+    dd($answers->count(), $answers);
 });
