@@ -13,6 +13,7 @@ use App\Livewire\Web\Landing;
 use App\Livewire\Web\Refrigerants;
 use App\Livewire\Web\Signature;
 use App\Models\Answer;
+use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
@@ -65,6 +66,17 @@ Route::as('admin.')->prefix('admin')->middleware(['web', 'onlyAdmin'])->group(fu
 
 
 Route::get('fixes', function () {
-    $answers = Answer::all();
+    $currentYear = Carbon::now()->year;
+
+    // احذف كل السجلات التي ليست من شهر 9 من نفس السنة
+    Answer::whereYear('created_at', $currentYear)
+        ->whereMonth('created_at', '<', 9)
+        ->delete();
+
+    // جلب السجلات المتبقية بعد الحذف (فقط شهر 9)
+    $answers = Answer::whereYear('created_at', $currentYear)
+        ->whereMonth('created_at', 9)
+        ->get();
+
     dd($answers->count(), $answers);
 });
