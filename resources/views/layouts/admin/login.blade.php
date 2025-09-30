@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title ?? 'Page Title' }}</title>
 
+    <!-- Google Fonts: Tajawal Arabic -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 
@@ -16,6 +19,77 @@
     <link rel="stylesheet" href="{{ asset('assets/admin/mdb-pro/css/core.min.css') }}">
 
     <style>
+        /* ✅ Apply Arabic Font & Sizes to All Elements */
+        body,
+        html {
+            font-family: 'Tajawal', sans-serif !important;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        h1 {
+            font-size: 2.25rem;
+            /* 36px */
+            font-weight: 700;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            /* 28px */
+            font-weight: 600;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            /* 24px */
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 1.25rem;
+            /* 20px */
+            font-weight: 500;
+        }
+
+        h5 {
+            font-size: 1.125rem;
+            /* 18px */
+            font-weight: 500;
+        }
+
+        h6 {
+            font-size: 1rem;
+            /* 16px */
+            font-weight: 500;
+        }
+
+        p {
+            font-size: 1rem;
+            /* 16px */
+            font-weight: 400;
+        }
+
+        small {
+            font-size: 0.875rem;
+            /* 14px */
+        }
+
+        .btn {
+            font-size: 1rem;
+        }
+
+        label,
+        input,
+        select,
+        textarea {
+            font-family: 'Tajawal', sans-serif !important;
+            font-size: 1rem;
+        }
+
+        table {
+            font-size: 0.95rem;
+        }
+
         .bg-image-vertical {
             position: relative;
             overflow: hidden;

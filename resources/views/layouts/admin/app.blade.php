@@ -24,75 +24,79 @@
     <link rel="icon" type="image/png" href="{{ asset('assets/web/images/logo.jpeg') }}">
 
     <style>
-        /* ✅ Apply Arabic Font & Sizes to All Elements */
+        /* ✅ خطوط عربية أكبر */
         body,
         html {
             font-family: 'Tajawal', sans-serif !important;
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 18px;
+            line-height: 1.8;
         }
 
         h1 {
-            font-size: 2.25rem;
-            /* 36px */
+            font-size: 2.625rem;
+            /* 42px */
             font-weight: 700;
         }
 
         h2 {
-            font-size: 1.75rem;
-            /* 28px */
+            font-size: 2.125rem;
+            /* 34px */
             font-weight: 600;
         }
 
         h3 {
-            font-size: 1.5rem;
-            /* 24px */
+            font-size: 1.875rem;
+            /* 30px */
             font-weight: 600;
         }
 
         h4 {
+            font-size: 1.625rem;
+            /* 26px */
+            font-weight: 500;
+        }
+
+        h5 {
+            font-size: 1.375rem;
+            /* 22px */
+            font-weight: 500;
+        }
+
+        h6 {
             font-size: 1.25rem;
             /* 20px */
             font-weight: 500;
         }
 
-        h5 {
+        p {
             font-size: 1.125rem;
             /* 18px */
-            font-weight: 500;
-        }
-
-        h6 {
-            font-size: 1rem;
-            /* 16px */
-            font-weight: 500;
-        }
-
-        p {
-            font-size: 1rem;
-            /* 16px */
             font-weight: 400;
         }
 
         small {
-            font-size: 0.875rem;
-            /* 14px */
-        }
-
-        .btn {
             font-size: 1rem;
+            /* 16px */
         }
 
         label,
         input,
         select,
-        textarea {
+        textarea,
+        button {
             font-family: 'Tajawal', sans-serif !important;
-            font-size: 1rem;
+            font-size: 1.125rem;
+            /* 18px */
         }
 
         table {
-            font-size: 0.95rem;
+            font-size: 1.05rem;
+            /* 17px */
+        }
+
+        .btn {
+            font-size: 1.125rem;
+            /* 18px */
         }
 
         .mdb-docs-layout {
