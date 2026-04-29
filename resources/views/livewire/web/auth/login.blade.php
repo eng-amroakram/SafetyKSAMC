@@ -1,5 +1,5 @@
 <!-- "تسجيل الدخول" Section -->
-<section class="container my-4 py-5 d-flex flex-column align-items-center">
+<section class="container my-4 py-5 d-flex flex-column align-items-center" wire:ignore>
 
     <style>
         .form-control:focus {
@@ -40,7 +40,7 @@
             box-shadow: inset 0 0 0 1px rgb(1, 161, 127);
         }
     </style>
-    </style>
+
     <h2 class="mb-4">تسجيل الدخول</h2>
     <p class="lead" style="font-size: 1.2rem;">
         يرجى إدخال بيانات الاعتماد الخاصة بك لتسجيل الدخول.
