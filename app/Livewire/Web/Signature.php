@@ -41,7 +41,7 @@ class Signature extends Component
             file_put_contents($file, $image_base64);
             $user->signature = $path;
             $user->save();
-            return redirect()->route('web.home');
+            return redirect()->route('web.profile');
         } else {
             $this->alertMessage('لم يتم التوقيع، يرجى المحاولة مرة اخرى', 'danger');
         }
