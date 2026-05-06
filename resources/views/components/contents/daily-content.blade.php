@@ -165,11 +165,11 @@
             </div>
         </div>
 
-        <div class="row mb-4">
+        {{-- <div class="row mb-4">
             <div class="col-md-12">
                 <x-file-input name="image" model="form" label="صورة الحالة"></x-file-input>
             </div>
-        </div>
+        </div> --}}
 
         <div class="row">
             <div class="col-md-12">

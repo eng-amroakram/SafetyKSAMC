@@ -46,11 +46,11 @@
                         <tr>
                             <td>{{ $x }}</td>
                             <td>{{ $value }}</td>
-                            <td>
+                            {{-- <td>
                                 <!-- First Radio Button -->
                                 <input class="form-check-input checkboxradio" type="radio" name="{{ 'row_' . $x }}"
                                     value="{{ 'na_' . $x }}" id="{{ 'na_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>
                                 <!-- Second Radio Button -->
                                 <input class="form-check-input checkboxradio" type="radio" name="{{ 'row_' . $x }}"

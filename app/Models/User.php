@@ -27,6 +27,8 @@ class User extends Authenticatable
         'job_number',
         'id_number',
         'job_title',
+        'phone',
+        'email',
         'signature',
         'type',
         'password',
@@ -59,6 +61,8 @@ class User extends Authenticatable
             'name',
             'job_number',
             'id_number',
+            'phone',
+            'email',
             'job_title',
             'signature',
             'type',
@@ -75,6 +79,9 @@ class User extends Authenticatable
         $builder->when($filters['search'] != '', function ($query) use ($filters) {
             $query
                 ->where('name', 'like', '%' . $filters['search'] . '%')
+                ->orWhere('job_title', 'like', '%' . $filters['search'] . '%')
+                ->orWhere('phone', 'like', '%' . $filters['search'] . '%')
+                ->orWhere('email', 'like', '%' . $filters['search'] . '%')
                 ->orWhere('job_number', 'like', '%' . $filters['search'] . '%')
                 ->orWhere('id_number', 'like', '%' . $filters['search'] . '%');
         });
@@ -86,8 +93,10 @@ class User extends Authenticatable
             'name' => ['required'],
             'job_number' => ['required', 'unique:users,job_number'],
             'id_number' => ['required', 'unique:users,id_number'],
+            'phone' => ['required', 'unique:users,phone'],
+            'email' => ['required', 'unique:users,email'],
             'job_title' => ['required'],
-            'password' => ['required']
+            'password' => ['required'],
         ];
     }
 
@@ -99,6 +108,10 @@ class User extends Authenticatable
             'job_number.unique' => 'رقم الموظف موجود بالفعل',
             'id_number.required' => 'هذا الحقل مطلوب',
             'id_number.unique' => 'رقم الهوية موجود بالفعل',
+            'phone.required' => 'هذا الحقل مطلوب',
+            'phone.unique' => 'رقم الهاتف موجود بالفعل',
+            'email.required' => 'هذا الحقل مطلوب',
+            'email.unique' => 'البريد الإلكتروني موجود بالفعل',
             'job_title.required' => 'هذا الحقل مطلوب',
             'password.required' => 'هذا الحقل مطلوب',
         ];
@@ -148,5 +161,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Image::class, 'user_id', 'id');
     }
-
 }

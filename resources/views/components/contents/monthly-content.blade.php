@@ -563,13 +563,13 @@
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'sat_' . $x }}"
-                                    id="{{ 'sat_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'no_' . $x }}"
+                                    id="{{ 'no_' . $x }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'un_' . $x }}"
-                                    id="{{ 'un_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'yes_' . $x }}"
+                                    id="{{ 'yes_' . $x }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"
@@ -679,9 +679,9 @@
                                 <button type="button" class="btn btn-sm clearbutton"
                                     row="{{ 'row_' . $x }}">Clear</button>
                             </td>
-                            <td>
+                            {{-- <td>
                                 <input type="text" class="form-control textfield" name="{{ 'comment_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>{{ $key }}</td>
                             <td>{{ $x }}</td>
                         </tr>
@@ -786,10 +786,10 @@
                                 <button type="button" class="btn btn-sm clearbutton"
                                     row="{{ 'row_' . $x }}">Clear</button>
                             </td>
-                            <td>
+                            {{-- <td>
                                 <input type="text" class="form-control textfield"
                                     name="{{ 'comment_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>{{ $key }}</td>
                             <td>{{ $x }}</td>
                         </tr>
@@ -894,10 +894,10 @@
                                 <button type="button" class="btn btn-sm clearbutton"
                                     row="{{ 'row_' . $x }}">Clear</button>
                             </td>
-                            <td>
+                            {{-- <td>
                                 <input type="text" class="form-control textfield"
                                     name="{{ 'comment_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>{{ $key }}</td>
                             <td>{{ $x }}</td>
                         </tr>
@@ -1002,10 +1002,10 @@
                                 <button type="button" class="btn btn-sm clearbutton"
                                     row="{{ 'row_' . $x }}">Clear</button>
                             </td>
-                            <td>
+                            {{-- <td>
                                 <input type="text" class="form-control textfield"
                                     name="{{ 'comment_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>{{ $key }}</td>
                             <td>{{ $x }}</td>
                         </tr>
@@ -1110,10 +1110,10 @@
                                 <button type="button" class="btn btn-sm clearbutton"
                                     row="{{ 'row_' . $x }}">Clear</button>
                             </td>
-                            <td>
+                            {{-- <td>
                                 <input type="text" class="form-control textfield"
                                     name="{{ 'comment_' . $x }}" />
-                            </td>
+                            </td> --}}
                             <td>{{ $key }}</td>
                             <td>{{ $x }}</td>
                         </tr>
@@ -1245,16 +1245,16 @@
                                 </select>
                             </td>
                             <td class="p-2">
-                                <select class="select selectfield" id="{{ 'cyliner_' . $x }}"
-                                    name="{{ 'cyliner_' . $x }}">
+                                <select class="select selectfield" id="{{ 'cylinder_' . $x }}"
+                                    name="{{ 'cylinder_' . $x }}">
                                     <option value="">لا شيء</option>
                                     <option value="✔️">✔️</option>
                                     <option value="❌">❌</option>
                                 </select>
                             </td>
                             <td class="p-2">
-                                <select class="select selectfield" id="{{ 'pin_seal_' . $x }}"
-                                    name="{{ 'pin_seal_' . $x }}">
+                                <select class="select selectfield" id="{{ 'pin_' . $x }}"
+                                    name="{{ 'pin_' . $x }}">
                                     <option value="">لا شيء</option>
                                     <option value="✔️">✔️</option>
                                     <option value="❌">❌</option>
@@ -1468,13 +1468,13 @@
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'sat_' . $x }}"
-                                    id="{{ 'sat_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'no_' . $x }}"
+                                    id="{{ 'no_' . $x }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'un_' . $x }}"
-                                    id="{{ 'un_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'yes_' . $x }}"
+                                    id="{{ 'yes_' . $x }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"
@@ -1573,22 +1573,22 @@
                             <td>{{ $x }}</td>
                             <td>
                                 <input type="text" class="form-control textfield"
-                                    name="{{ 'location_' . $x }}" />
+                                    name="{{ 'department_' . $x }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'un_' . $x }}"
-                                    id="{{ 'un_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'na_' . $x }}"
+                                    id="{{ 'na_' . $x }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'sat_' . $x }}"
-                                    id="{{ 'sat_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'no_' . $x }}"
+                                    id="{{ 'no_' . $x }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $x }}" value="{{ 'notreq_' . $x }}"
-                                    id="{{ 'notreq_' . $x }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'yes_' . $x }}"
+                                    id="{{ 'yes_' . $x }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"
@@ -1630,29 +1630,29 @@
                 </thead>
                 <tbody>
                     @php
-                        $x = 1;
+                        // $x = 1;
                     @endphp
                     @forelse (config('data.forms.table-body.monthly.emergency_shower_eye_wash_2') as $key => $value)
                         <tr>
                             <td>{{ $key }}</td>
                             <td>
                                 <input type="text" class="form-control textfield"
-                                    name="{{ 'location_' . $key }}" />
+                                    name="{{ 'department_' . $key }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'notreq_' . $key }}"
-                                    id="{{ 'notreq_' . $key }}" />
+                                    name="{{ 'row_' . $x }}" value="{{ 'na_' . $x }}"
+                                    id="{{ 'na_' . $x }}" />
+                            </td>
+                                                        <td>
+                                <input class="form-check-input checkboxradio" type="radio"
+                                    name="{{ 'row_' . $key }}" value="{{ 'no_' . $key }}"
+                                    id="{{ 'no_' . $key }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'sat_' . $key }}"
-                                    id="{{ 'sat_' . $key }}" />
-                            </td>
-                            <td>
-                                <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'un_' . $key }}"
-                                    id="{{ 'un_' . $key }}" />
+                                    name="{{ 'row_' . $key }}" value="{{ 'yes_' . $key }}"
+                                    id="{{ 'yes_' . $key }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"
@@ -1756,12 +1756,12 @@
                             <td class="px-2"><input type="text" class="form-control textfield"
                                     name="{{ 'door_' . $key }}" style="min-width: 200px;" /></td>
                             <td class="px-2"><input type="text" class="form-control textfield"
-                                    name="{{ 'flush_' . $key }}" style="min-width: 200px;" /></td>
+                                    name="{{ 'fluch_' . $key }}" style="min-width: 200px;" /></td>
                             <td class="px-2"><input type="text" class="form-control textfield"
-                                    name="{{ 'resistance_' . $key }}" style="min-width: 200px;" />
+                                    name="{{ 'fire_resistance_' . $key }}" style="min-width: 200px;" />
                             </td>
                             <td class="px-2"><input type="text" class="form-control textfield"
-                                    name="{{ 'obstructed_' . $key }}" style="min-width: 200px;" />
+                                    name="{{ 'not_obstructed_' . $key }}" style="min-width: 200px;" />
                             </td>
                             <td class="px-2"><input type="text" class="form-control textfield"
                                     name="{{ 'notes_' . $key }}" style="min-width: 200px;" /></td>
@@ -1865,7 +1865,7 @@
                             <td class="px-2"><input type="text" class="form-control textfield"
                                     name="{{ 'tel_' . $key }}" style="min-width: 200px;" /></td>
                             <td class="px-2"><input type="text" class="form-control textfield"
-                                    name="{{ 'lift_operation_condition_' . $key }}" style="min-width: 200px;" />
+                                    name="{{ 'comment_' . $key }}" style="min-width: 200px;" />
                             </td>
                         </tr>
                         @php
@@ -1951,17 +1951,17 @@
                             <td>{{ $x }}</td>
                             <td>
                                 <input type="text" class="form-control textfield"
-                                    name="{{ 'location_' . $key }}" />
+                                    name="{{ 'department_' . $key }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'sat_' . $key }}"
-                                    id="{{ 'sat_' . $key }}" />
+                                    name="{{ 'row_' . $key }}" value="{{ 'no_' . $key }}"
+                                    id="{{ 'no_' . $key }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'un_' . $key }}"
-                                    id="{{ 'un_' . $key }}" />
+                                    name="{{ 'row_' . $key }}" value="{{ 'yes_' . $key }}"
+                                    id="{{ 'yes_' . $key }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"
@@ -2059,13 +2059,13 @@
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'sat_' . $key }}"
-                                    id="{{ 'sat_' . $key }}" />
+                                    name="{{ 'row_' . $key }}" value="{{ 'no_' . $key }}"
+                                    id="{{ 'no_' . $key }}" />
                             </td>
                             <td>
                                 <input class="form-check-input checkboxradio" type="radio"
-                                    name="{{ 'row_' . $key }}" value="{{ 'un_' . $key }}"
-                                    id="{{ 'un_' . $key }}" />
+                                    name="{{ 'row_' . $key }}" value="{{ 'yes_' . $key }}"
+                                    id="{{ 'yes_' . $key }}" />
                             </td>
                             <td>
                                 <button type="button" class="btn btn-sm clearbutton"

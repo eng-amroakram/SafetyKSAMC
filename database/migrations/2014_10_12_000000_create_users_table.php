@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('job_number')->unique()->nullable();
             $table->string('id_number')->unique()->nullable();
+            $table->string('phone')->unique()->nullable();
+            $table->string('email')->unique()->nullable();
             $table->string('job_title')->nullable();
             $table->string('signature')->nullable();
             $table->enum('type', ['superadmin', 'admin', 'employee']);
