@@ -1,3 +1,4 @@
+{{-- weekly contents --}}
 <div class="tab-content" id="dailyToursTabContent">
 
     <div class="tab-pane fade tab-pane-selector active show" id="weekly_warehouse_tab_id" role="tabpanel" wire:ignore.self>

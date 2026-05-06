@@ -1,3 +1,4 @@
+{{-- monthly contents --}}
 <div class="tab-content" id="dailyToursTabContent">
     <div class="tab-pane fade tab-pane-selector active show" id="refrigerants_tab_id" role="tabpanel">
         <div class="row mb-3">

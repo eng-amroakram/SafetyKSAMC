@@ -1,3 +1,4 @@
+{{-- //Home page --}}
 <div class="container my-5 text-white" wire:ignore.self>
 
     <x-taps.main-taps :user="$user"></x-taps.main-taps>

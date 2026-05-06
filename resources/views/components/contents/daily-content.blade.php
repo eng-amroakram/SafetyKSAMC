@@ -1,3 +1,4 @@
+{{-- dauly contents --}}
 <div class="tab-content" id="dailyToursTabContent" wire:ignore.self>
 
     <div class="tab-pane fade show active" id="night_inspection_tour_tab_id" role="tabpanel"

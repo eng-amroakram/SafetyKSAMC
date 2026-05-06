@@ -43,11 +43,6 @@
                     </a>
                 </div>
             @endif
-
-
-
-
-
         </div>
     </nav>
     <!-- Breadcrumb -->

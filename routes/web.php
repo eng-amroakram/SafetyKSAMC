@@ -10,6 +10,7 @@ use App\Livewire\Admin\Panel\Viewer;
 use App\Livewire\Web\Auth\Login as WebLogin;
 use App\Livewire\Web\Home;
 use App\Livewire\Web\Landing;
+use App\Livewire\Web\Profile;
 use App\Livewire\Web\Refrigerants;
 use App\Livewire\Web\Signature;
 use App\Models\Answer;
@@ -42,6 +43,7 @@ Route::controller(WebViewsController::class)
 
         Route::middleware(['auth'])->group(function () {
             Route::get('home', Home::class)->name('home');
+            Route::get('profile', Profile::class)->name('profile');
             Route::get('signature', Signature::class)->name('signature');
             Route::get('refrigerants', Refrigerants::class)->name('refrigerants');
             Route::get('logout', 'logout')->name('logout');

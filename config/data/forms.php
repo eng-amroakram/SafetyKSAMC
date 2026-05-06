@@ -1,6 +1,6 @@
 <?php
 
-
+//path: config.data.forms
 return [
     "table-header" => [
         "daily" => [

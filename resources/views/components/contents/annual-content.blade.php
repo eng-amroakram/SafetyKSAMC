@@ -1,3 +1,4 @@
+{{-- annual contents --}}
 <div class="tab-content" id="annualToursTabContent">
     <div class="tab-pane fade show active" id="glass_breaker_fire_detectors_tab_id" role="tabpanel"
         aria-labelledby="glass_breaker_fire_detectors_tab">
