@@ -226,13 +226,13 @@
                             </td>
                             <td>
                                 <input type="text" class="form-control textfield"
-                                    name="{{ 'procedure_' . $x }}" />
+                                    name="{{ 'work_order_number_' . $x }}" />
                             </td>
 
-                            <td>
+                            {{-- <td>
                                 <x-file-input name="{{ 'location_image_' . $x }}" model="form"
                                     label=""></x-file-input>
-                            </td>
+                            </td> --}}
 
 
                         </tr>
