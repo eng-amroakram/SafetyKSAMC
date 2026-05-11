@@ -29,6 +29,8 @@ class Users extends Component
     public $search = "";
     public $filters = [];
 
+    public $email = "";
+    public $phone = "";
     public $name = "";
     public $job_number = "";
     public $job_title = "";

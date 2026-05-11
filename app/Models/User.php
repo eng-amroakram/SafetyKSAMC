@@ -93,8 +93,8 @@ class User extends Authenticatable
             'name' => ['required'],
             'job_number' => ['required', 'unique:users,job_number'],
             'id_number' => ['required', 'unique:users,id_number'],
-            'phone' => ['required', 'unique:users,phone'],
-            'email' => ['required', 'unique:users,email'],
+            'phone' => ['nullable', 'unique:users,phone'],
+            'email' => ['nullable', 'unique:users,email'],
             'job_title' => ['required'],
             'password' => ['required'],
         ];
